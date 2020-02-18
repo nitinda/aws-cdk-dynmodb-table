@@ -6,7 +6,7 @@ export class DynamoDBStack extends cdk.Stack {
   constructor(app: cdk.App, id: string, props: StackProps ) {
     super(app, id, props);
 
-    const dynamoTable = new dynamodb.Table(this, 'items', {
+    new dynamodb.Table(this, 'items', {
       partitionKey: {
         name: 'itemId',
         type: dynamodb.AttributeType.STRING
@@ -20,6 +20,6 @@ export class DynamoDBStack extends cdk.Stack {
 }
 
 const app = new cdk.App();
-new DynamoDBStack(app, 'DynamoDBTableExample', { tags: {'Product': 'ProductService', 'Name': 'Test'}});
+new DynamoDBStack(app, 'DynamoDBTableExample', { tags: {'Environment': 'prod', 'Name': 'DynamoDBTableExample'}});
 
 app.synth();
