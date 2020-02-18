@@ -32,7 +32,13 @@ _This will install the necessary CDK, then this example's dependencies, and then
 
 ## _Deploy_
 
-_Run `cdk deploy`. This will deploy / redeploy your Stack to your AWS Account._
+_To Deploy Run_
+
+```bash
+cdk deploy
+```
+
+_This will deploy / redeploy your Stack to your AWS Account._
 _After the deployment you will see the API's URL, which represents the url you can then use._
 
 ---
