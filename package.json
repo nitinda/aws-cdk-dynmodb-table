@@ -1,0 +1,23 @@
+{
+  "name": "dynmodb",
+  "version": "1.0.0",
+  "description": "Running a Dynadb on a schedule",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "author": {
+    "name": "Nitin Das"
+  },
+  "license": "MIT License",
+  "devDependencies": {
+    "@types/node": "^10.17.0",
+    "typescript": "~3.7.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-dynamodb": "*",
+    "@aws-cdk/core": "*"
+  }
+}
